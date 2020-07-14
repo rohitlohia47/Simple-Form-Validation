@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafb;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #fff ;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    width: 400px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #777
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+    border:1px solid #f0f0f0;
+}
+input:focus{
+    outline: 0;
+    border-color:#777
+}
+button{
+   width: 100%;
+   cursor: pointer;
+   padding:10px;
+   border-radius: 4px;
+   background-color: #3498db;
+   border:2px solid #3498db;
+   font-size: 16px;
+   color:white;
+   margin-top:20px;
+}
+small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: red;
+}
+.form-control.error input{
+    border: 1px solid red;
+}
+.form-control.success input{
+    border: 1px solid green;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
